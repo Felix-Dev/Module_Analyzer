@@ -21,9 +21,9 @@ void map_imported_functions(int *ioOpenFlag, SceLibraryStubTable *stubTable, con
     char *libImportsBuf = NULL;
     char buf[128];
     int ioObjDesc;
+    int blockId;
     u32 textLength = 0;
-    u32 stubs;
-    int blockId; 
+    u32 stubs;   
     u32 libImpBufSize; 
     
     memset(buf, 0, sizeof(buf));    
