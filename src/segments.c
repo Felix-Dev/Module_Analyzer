@@ -48,7 +48,7 @@ static void add_to_buffer(SegTypes segFlag, char *segBuf, const char *libName, u
  * Sort the imported .sceStub.text. sections from low-order to high-order to map them correctly.
  * 
  * @param mod - The currently investigated module, used to map its .text segment.
- * @param segBuf - The buffer which will hold the sorted .sceStub.text. info lines ready to be written to a file.
+ * @param segBuf - The buffer which will hold the sorted .sceStub.text. info lines ready to be written into a file.
  * @param libSegPtr - Pointer to an array of stub segments, which have to be sorted (occurrence in memory: low-order).
  * @param impLibs - The number of imported libraries by a module.
  */
