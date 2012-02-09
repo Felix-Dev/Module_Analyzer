@@ -1,0 +1,6 @@
+/** Info 
+ * 
+ * Game name finding out using PARAM-SFO only possible AFTER Game module is loaded
+ * first argument of module_start is the path of the program
+ * 
+ */
