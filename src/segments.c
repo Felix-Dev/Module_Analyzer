@@ -49,10 +49,10 @@ static void add_to_buffer(SegTypes segFlag, char *segBuf, const char *libName, u
  * 
  * @param mod - The currently investigated module, used to map its .text segment.
  * @param segBuf - The buffer which will hold the sorted .sceStub.text. info lines ready to be written to a file.
- * @param libSegPtr - Pointer to an array of stub segments, which have to be sorted (occurence in memory - low-order).
+ * @param libSegPtr - Pointer to an array of stub segments, which have to be sorted (occurrence in memory: low-order).
  * @param impLibs - The number of imported libraries by a module.
  */
-static void sort_lib_sections(SceModule2 *mod, char *segBuf, LibStubSegment *libSegPtr, const u32 impLibs) {
+static void sort_lib_sections(SceModule2 *mod, char *segBuf, LibStubSegment *libSegPtr, u32 impLibs) {
     u32 sIndex;        
     u32 i;
     u32 count;
@@ -76,7 +76,7 @@ static void sort_lib_sections(SceModule2 *mod, char *segBuf, LibStubSegment *lib
     }  
 }
 
-void map_segments(SceModule2 *mod, const char *modName, LibStubSegment *libSegPtr, const u32 impLibs, u32 const libNameLengths) {
+void map_segments(SceModule2 *mod, const char *modName, LibStubSegment *libSegPtr, u32 impLibs, u32 libNameLengths) {
     char *segBuf = NULL;
     char buf[128];
     int ioObjDesc;

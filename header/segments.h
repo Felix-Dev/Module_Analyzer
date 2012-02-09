@@ -93,7 +93,7 @@ extern "C" {
      * @param libNameLengths - The length of all imported library names added together. Used as an information
      *                         how much memory has to be allocated as a segmentBuffer.
      */
-    void map_segments(SceModule2 *mod, const char *modName, LibStubSegment *libSegPtr, const u32 impLibs, const u32 libNameLengths);
+    void map_segments(SceModule2 *mod, const char *modName, LibStubSegment *libSegPtr, u32 impLibs, u32 libNameLengths);
 
 
 #ifdef	__cplusplus
