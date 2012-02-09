@@ -1,0 +1,1 @@
+Module_Analyzer is a module for the PSP which analyzes the attributes of custom modules (i.e. game modules, homebrew modules) which are loaded during the boot process of a PSP Program. It maps the imported sce functions to their stub addresses and does segment mapping to give you an entry point when you want to start reversing a game/program. 
